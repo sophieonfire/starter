@@ -1,0 +1,10 @@
+de.nrw.it.ignrw.autoconfig.MessageSourceAutoConfiguration
+de.nrw.it.ignrw.autoconfig.ExceptionHandlerAutoConfiguration
+de.nrw.it.ignrw.autoconfig.WebAutoConfiguration
+de.nrw.it.ignrw.autoconfig.AuthorityAutoConfiguration
+de.nrw.it.ignrw.autoconfig.RequestContextAutoConfiguration
+de.nrw.it.ignrw.autoconfig.OpenApiAutoConfiguration
+de.nrw.it.ignrw.autoconfig.HttpSecurityAutoConfiguration
+de.nrw.it.ignrw.mapper.RoleIdMapper
+de.nrw.it.ignrw.mapper.LevelTypeIdMapper
+de.nrw.it.ignrw.mapper.OrgTypeIdMapper

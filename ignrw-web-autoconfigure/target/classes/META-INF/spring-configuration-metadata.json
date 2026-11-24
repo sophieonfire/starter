@@ -1,0 +1,239 @@
+{
+  "groups": [
+    {
+      "name": "ignrw.modul",
+      "type": "de.nrw.it.ignrw.property.ModulProperties",
+      "sourceType": "de.nrw.it.ignrw.property.ModulProperties"
+    },
+    {
+      "name": "ignrw.modul.web",
+      "type": "de.nrw.it.ignrw.property.ModulProperties$Web",
+      "sourceType": "de.nrw.it.ignrw.property.ModulProperties",
+      "sourceMethod": "getWeb()"
+    },
+    {
+      "name": "ignrw.openapi",
+      "type": "de.nrw.it.ignrw.property.OpenApiProperties",
+      "sourceType": "de.nrw.it.ignrw.property.OpenApiProperties"
+    },
+    {
+      "name": "ignrw.request.context",
+      "type": "de.nrw.it.ignrw.property.RequestContextProperties",
+      "sourceType": "de.nrw.it.ignrw.property.RequestContextProperties"
+    },
+    {
+      "name": "ignrw.security.http",
+      "type": "de.nrw.it.ignrw.property.HttpSecurityProperties",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties"
+    },
+    {
+      "name": "ignrw.security.http.api",
+      "type": "de.nrw.it.ignrw.property.HttpSecurityProperties$Api",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties",
+      "sourceMethod": "getApi()"
+    },
+    {
+      "name": "ignrw.security.http.api.cors",
+      "type": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Api",
+      "sourceMethod": "getCors()"
+    },
+    {
+      "name": "ignrw.security.http.api.dsgvo",
+      "type": "de.nrw.it.ignrw.property.HttpSecurityProperties$Dsgvo",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Api",
+      "sourceMethod": "getDsgvo()"
+    },
+    {
+      "name": "ignrw.security.http.health",
+      "type": "de.nrw.it.ignrw.property.HttpSecurityProperties$Health",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties",
+      "sourceMethod": "getHealth()"
+    },
+    {
+      "name": "ignrw.security.http.swagger",
+      "type": "de.nrw.it.ignrw.property.HttpSecurityProperties$Swagger",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties",
+      "sourceMethod": "getSwagger()"
+    },
+    {
+      "name": "ignrw.security.jwt",
+      "type": "de.nrw.it.ignrw.property.JwtRoleProperties",
+      "sourceType": "de.nrw.it.ignrw.property.JwtRoleProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ignrw.modul.name",
+      "type": "java.lang.String",
+      "sourceType": "de.nrw.it.ignrw.property.ModulProperties",
+      "defaultValue": "GIVE_ME_A_NAME"
+    },
+    {
+      "name": "ignrw.modul.web.controller-packages",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.ModulProperties$Web",
+      "defaultValue": "controller"
+    },
+    {
+      "name": "ignrw.modul.web.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.ModulProperties$Web",
+      "defaultValue": true
+    },
+    {
+      "name": "ignrw.openapi.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Schaltet die automatische OpenAPI-Dokumentation und die Context-Header ein oder aus.",
+      "sourceType": "de.nrw.it.ignrw.property.OpenApiProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "ignrw.openapi.title",
+      "type": "java.lang.String",
+      "description": "Der Titel der API-Dokumentation. Standardmäßig wird der Name der Anwendung verwendet.",
+      "sourceType": "de.nrw.it.ignrw.property.OpenApiProperties"
+    },
+    {
+      "name": "ignrw.openapi.token-url",
+      "type": "java.lang.String",
+      "description": "TokenUrl für die Authentifizierung",
+      "sourceType": "de.nrw.it.ignrw.property.OpenApiProperties"
+    },
+    {
+      "name": "ignrw.openapi.version",
+      "type": "java.lang.String",
+      "description": "Die Version der API-Dokumentation.",
+      "sourceType": "de.nrw.it.ignrw.property.OpenApiProperties"
+    },
+    {
+      "name": "ignrw.request.context.include-patterns",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.RequestContextProperties"
+    },
+    {
+      "name": "ignrw.request.context.org-header",
+      "type": "java.lang.String",
+      "sourceType": "de.nrw.it.ignrw.property.RequestContextProperties",
+      "defaultValue": "ignrw-context-org"
+    },
+    {
+      "name": "ignrw.security.http.api.cors.allow-credentials",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors",
+      "defaultValue": false
+    },
+    {
+      "name": "ignrw.security.http.api.cors.allowed-headers",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors"
+    },
+    {
+      "name": "ignrw.security.http.api.cors.allowed-methods",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors"
+    },
+    {
+      "name": "ignrw.security.http.api.cors.allowed-origin-patterns",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors"
+    },
+    {
+      "name": "ignrw.security.http.api.cors.allowed-origins",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors"
+    },
+    {
+      "name": "ignrw.security.http.api.cors.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors",
+      "defaultValue": true
+    },
+    {
+      "name": "ignrw.security.http.api.cors.exposed-headers",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors"
+    },
+    {
+      "name": "ignrw.security.http.api.cors.max-age",
+      "type": "java.lang.Long",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors",
+      "defaultValue": 3600
+    },
+    {
+      "name": "ignrw.security.http.api.cors.path-patterns",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Cors",
+      "defaultValue": "\/**"
+    },
+    {
+      "name": "ignrw.security.http.api.csrf-disabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Api",
+      "defaultValue": true
+    },
+    {
+      "name": "ignrw.security.http.api.dsgvo.claim",
+      "type": "java.lang.String",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Dsgvo",
+      "defaultValue": "dsgvo_accepted"
+    },
+    {
+      "name": "ignrw.security.http.api.dsgvo.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Dsgvo",
+      "defaultValue": true
+    },
+    {
+      "name": "ignrw.security.http.api.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Api",
+      "defaultValue": true
+    },
+    {
+      "name": "ignrw.security.http.health.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Health",
+      "defaultValue": true
+    },
+    {
+      "name": "ignrw.security.http.health.paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Health",
+      "defaultValue": "\/actuator\/**"
+    },
+    {
+      "name": "ignrw.security.http.swagger.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Swagger",
+      "defaultValue": false
+    },
+    {
+      "name": "ignrw.security.http.swagger.paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "de.nrw.it.ignrw.property.HttpSecurityProperties$Swagger"
+    },
+    {
+      "name": "ignrw.security.jwt.claim",
+      "type": "java.lang.String",
+      "sourceType": "de.nrw.it.ignrw.property.JwtRoleProperties",
+      "defaultValue": "sub"
+    },
+    {
+      "name": "ignrw.security.jwt.include-jwt-scopes",
+      "type": "java.lang.Boolean",
+      "sourceType": "de.nrw.it.ignrw.property.JwtRoleProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "ignrw.security.jwt.role-prefix",
+      "type": "java.lang.String",
+      "sourceType": "de.nrw.it.ignrw.property.JwtRoleProperties",
+      "defaultValue": "ROLE_"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
